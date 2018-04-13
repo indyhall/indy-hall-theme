@@ -1,0 +1,52 @@
+//--------------------------------------------------------------
+// Footer
+//--------------------------------------------------------------
+
+.site-footer {
+	@include span-columns(12);
+	border-top: 2px solid #FFF;
+	background: #4A4A4A url('assets/images/footer-bg.png');
+	text-align: center;
+	color: white;
+	padding: 20px;
+	overflow: auto;
+  }
+  
+  .footer-widgets {
+	text-align:left;
+	//@include span-columns(12);
+	display: flex;
+	@include justify-content(space-evenly);
+
+	.footer-1, .footer-2 {
+	@include span-columns(4);
+	
+
+	  @media only screen and (min-width: 1024px) {
+		//@include span-columns(12);
+	  }
+  
+	h2 {
+	  border-bottom: solid 1px #FFF;
+	  }
+	}
+  }
+
+.site-info {
+	margin-top: 50px;
+
+	hr {
+	  display: block;
+	  margin-right: auto;
+	  margin-left: auto;
+	  width: 70px;
+	  height: 4px;
+	  background-color: $color-mineshaft;
+	}
+} // .site-info
+
+.site-info, .site-footer {
+	a, a:link {
+		color: $color-white;
+	  }
+}

@@ -1,0 +1,92 @@
+  .pricing-packages {
+    text-align: center;
+    background: #F4F4F4;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+  
+    @media only screen and (min-width: 1024px) {
+      padding: 50px 0;
+    }
+  
+    hr {
+      width: 70px;
+      height: 4px;
+      background-color: $color-link;
+      align-self: center;
+    }
+  
+    .inner-wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+  
+      @media only screen and (min-width: 1024px) {max-width: 980px;}
+  
+      .packages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+  
+        @media only screen and (min-width: 1024px) {
+          flex-direction: row;
+        }
+  
+        .package {
+          background-color: $color-background-body;
+          overflow: auto;
+          margin: 10px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 20px;
+          justify-content: space-between;
+  
+          @media only screen and (min-width: 1024px) {
+            margin: 0 10px;
+          }
+  
+          .package-name, .package-price, .package-caption, .package-description, .button {display: block;}
+  
+          .package-price {
+            font-size: 36px;
+            font-weight: 500;
+          }
+  
+          .button {
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            color: $color-white;
+            border: none;
+          }
+  
+          .package-name {
+            text-transform: uppercase;
+            color: grey;
+            font-size: 10px;
+            letter-spacing: 4px;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+  
+          .package-caption {
+            font-size: 12px;
+            font-family: 'Arial Narrow Bold', sans-serif;
+          }
+  
+          .package-description {
+            font-size: 12px;
+          }
+  
+          a {
+            color: white;
+            text-decoration: none;
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
