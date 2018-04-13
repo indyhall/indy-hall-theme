@@ -24,27 +24,35 @@
 		li {
 			margin: 0 $gutter*2 0 0;
 
-			a {
+			a, a:link, a:visited {
 				color: $color-white;
+		
+				&:hover {
+					color: $color-link-hover;
+				}
+			}
+		}
+
+		li.cta-button {
+			a, a:link {
+				color: $color-yellow;
+				text-transform: uppercase;
+				border: 1px solid $color-yellow;
+				border-radius: 5px;
+				padding: 9px 30px !important;
+				font-size: 12px;
+				width: 150px;
+				text-align: center;
+	
+			&:hover {
+				background: $color-yellow;
+				color: $color-black !important;
+				font-weight: bold !important;
+				}
 			}
 		}
 		
-		.cta-button {
-			color: yellow !important;
-			text-transform: uppercase;
-			border: 1px solid yellow;
-			border-radius: 5px;
-			padding: 9px 30px !important;
-			font-size: 12px;
-			width: 150px;
-			text-align: center;
-
-		&:hover {
-			background: yellow;
-			color: black !important;
-			font-weight: bold !important;
-			}
-		}
+		
 	} // ul
 
 	&.toggled ul {
