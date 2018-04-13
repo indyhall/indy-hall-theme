@@ -23,16 +23,7 @@ $hero_offset = get_field('hero_offset');
 	<main id="main" class="site-main">
     <section class="hero" style="background-image:url('<?php echo $image['url']; ?>'); background-position: 0 <?php echo $hero_offset; ?>%">
       <h1 class="hero-title"><?php the_field('hero_title'); ?></h1>
-			<span class="hero-description"><?php the_field('hero_description'); ?>
-				<!-- <section class="newsletter">
-					<div class="inner-wrap">
-							<div class="newsletter-form">
-								<?php //the_field('newsletter_tour', 'option'); ?>
-							</div>
-					</div>
-				</section> -->
-			</span>
-
+			<span class="hero-description"><?php the_field('hero_description'); ?></span>
   	</section>
 
 	  <section class="upcoming-event">
