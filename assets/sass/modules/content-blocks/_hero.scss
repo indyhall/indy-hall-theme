@@ -2,11 +2,74 @@
 // Hero Block
 //--------------------------------------------------------------
 .hero {
-	margin-bottom: 0;
-	overflow-y: hidden;
-	position: relative;
-	z-index: 1;
+	display: flex;
+      background: #000;
+      background-position:-100px;
+      background-size: cover;
+      padding: 10px;
+  
+      @media only screen and (min-width: 1024px) {
+        padding: 100px;
+      }
+      flex-direction: column;
+      margin: 0;
+  
+      .hero-title {
+        font-family: "Bungee Inline", open-sans;
+        font-weight: 100;
+        font-size: 58px;
 
+        @media only screen and (min-width: 1024px) {
+          font-size: 100px;
+          line-height: 90px;
+        }
+
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: #FDD505;
+        padding: 20px;
+        font-style: normal;
+        margin: 50px 0 20px;
+      }
+  
+      .hero-description {
+        display:none;
+        color: $color-white;
+        text-align: center;
+        font-family: 'Avenir Next Condensed';
+        align-self: center;
+        font-size: 36px;
+        background: rgba(0, 0, 0, 0.5);
+
+        @media only screen and (min-width: 1024px) {
+          display: inline;
+          max-width: 50%;
+        }
+        font-weight: 300;
+        margin: 0;
+      }
+      .ck_form.ck_naked {
+        margin: 0 !important;
+      }
+  
+    .hentry {display: none;}
+  
+    .upcoming-event {
+      text-align: center;
+      font-size: 1.2em;
+      border-bottom: solid 1px #CCC;
+      overflow: auto;
+      color: $color-dove-gray;
+      padding: 5px 20px;
+  
+      p {
+        margin: 1em;
+      }
+      a {
+        color: $color-purple !important;
+      }
+    }
 	// Transparent overlay.
 	&::after {
 		@include position(absolute, 0 0 null null);
