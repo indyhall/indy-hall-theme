@@ -2,11 +2,12 @@
 // Hero Block
 //--------------------------------------------------------------
 .hero {
-	display: flex;
+	  display: flex;
       background: #000;
       background-position:-100px;
       background-size: cover;
-      padding: 10px;
+	  padding: 10px;
+	  @include span-columns(12);
   
       @media only screen and (min-width: 1024px) {
         padding: 100px;
@@ -71,14 +72,14 @@
       }
     }
 	// Transparent overlay.
-	&::after {
-		@include position(absolute, 0 0 null null);
-		@include size(100%);
+	// &::after {
+	// 	@include position(absolute, 0 0 null null);
+	// 	@include size(100%);
 
-		//background-color: rgba($color-black, 0.5);
-		content: '';
-		z-index: 2;
-	} // &:after
+	// 	//background-color: rgba($color-black, 0.5);
+	// 	content: '';
+	// //	z-index: 2;
+	// } // &:after
 
 	// Content container.
 	&-content {
@@ -87,7 +88,6 @@
 		flex-direction: column;
 		justify-content: center;
 		margin: 0 auto;
-		max-width: 50%;
 		min-height: rem(500); // height of hero.
 		position: relative;
 		text-align: center;

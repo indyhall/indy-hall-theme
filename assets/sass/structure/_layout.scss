@@ -10,7 +10,7 @@
 .page-template-default, .single, .blog {
 	@include media($tablet-portrait) {
 		.site-content {
-			@include span-columns(6);
+			//@include span-columns(6);
 		}
 	}	
 }
