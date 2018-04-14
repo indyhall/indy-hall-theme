@@ -1,7 +1,7 @@
 .page-template-default, .single, .blog {
     h1 {
-        font-size: 50px !important;
-        line-height: 50px !important;
+        font-size: 42px !important;
+        line-height: 42px !important;
         @media only screen and (min-width: 1024px) {
             font-size: 80px !important;
             line-height: 80px !important;
@@ -19,7 +19,7 @@
             //padding-top: rem(64);
 
         .entry-header {
-            margin: rem(75) ;
+            margin: rem(75) 0 rem(20) 0;
             text-align:center;
         }
 
@@ -27,9 +27,19 @@
                 @include span-columns(6);
                 @include shift(3);
         }
+        blockquote {
+            border-left: solid 5px #ccc;
+            padding-left: 20px;
+        }
+
+        hr {
+
+            margin: rem(60) auto;
+        }
             .entry-content {
-                display: flex;
+                // display: flex;
                 flex-direction: column;
+
 
                 hr {
                     clear:both;
@@ -44,7 +54,7 @@
                         display: inline;
                         float: left;
                         max-width: 20em;
-                        margin: .5em 2.4em -0.5em -19%
+                        margin: .5em 2.4em 0.5em -19%
                     }
                     display: block;
                     float: none;

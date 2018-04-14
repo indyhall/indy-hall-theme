@@ -1,11 +1,14 @@
 //--------------------------------------------------------------
 // Hero Block
 //--------------------------------------------------------------
+.hero-image {
+  background-size: cover !important;
+  //background-position: 0;
+}
 .hero {
 	  display: flex;
-    background: #000;
-    background-position:0;
-    background-size: cover;
+    background: #000 url('assets/images/bright-squares.png');
+    background-size: auto;
 	  padding: 10px;
 	  @include span-columns(12);
       @media only screen and (min-width: 1024px) {
@@ -20,21 +23,21 @@
         font-weight: 100;
         font-size: 58px;
         line-height:58px;
-
-        @media only screen and (min-width: 1024px) {
-          max-width: 1024px;
-          margin: 0 auto;
-          font-size: 130px;
-          line-height: 130px;
-        }
-
         text-decoration: none;
         text-align: center;
         display: block;
         color: #FDD505;
         padding: 20px;
         font-style: normal;
-        margin: 50px 0 20px;
+        margin: 30px 0 20px;
+
+        @media only screen and (min-width: 1024px) {
+          max-width: 1024px;
+          font-size: 130px;
+          line-height: 130px;
+          margin: 50px auto 20px auto;
+        }
+
       }
 
       .hero-description {
@@ -43,19 +46,27 @@
         text-align: center;
         font-family: 'Avenir Next Condensed';
         align-self: center;
-        font-size: 36px;
+        font-size: 30px;
         background: rgba(0, 0, 0, 0.5);
         padding: 1rem 1rem;
 
         @media only screen and (min-width: 1024px) {
           display: block;
           margin: 0 auto;
-          max-width: 50%;
+          max-width: 40%;
 
         }
         font-weight: 300;
         margin: 0;
       }
+      .tour-button {
+        margin: -20px auto 20px auto;
+        display: block;
+        @media only screen and (min-width: 1024px) {
+          display: none;
+        }
+      }
+
       .ck_form.ck_naked {
         margin: 0 !important;
       }
@@ -89,7 +100,81 @@
 	&-description {
 		// padding-bottom: $gutter * 2;
 	} // .hero-description
+
+  .newsletter {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: rem(10);
+    margin: 0 auto;
+    max-width: rem(740);
+    text-align:center;
+    @media only screen and (min-width: 1024px) {
+      display: block;
+    }
+
+    // ConvertKit Styles
+    .ck_form.ck_naked .ck_form_fields {
+      padding: rem(10);
+    }
+    .ck_subscribe_button {
+      display:block;
+      width: 100% !important;
+      background: $color-yellow !important;
+      color: $color-black !important;
+      text-transform: uppercase;
+      border: 1px solid $color-yellow;
+      border-radius: 5px !important;
+      padding: 9px 30px !important;
+      font-size: 12px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: normal !important;
+      margin-top: 5px !important;
+      @media only screen and (min-width: 1525px) {
+        display: inline-block;
+        width: auto !important;
+      }
+    }
+    .ck_control_group input {
+      display:block;
+      border-radius: 5px !important;
+      width: 100% !important;
+      margin: 5px 0 !important;
+      @media only screen and (min-width: 1525px) {
+        display: inline-block;
+        width: auto !important;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+      }
+    }
+    .ck_converted_content {
+      background: transparent !important;
+      padding: inherit !important;
+      color: #FFF;
+    }
+
+  }
+
 } // .hero
+
+a.tour-button {
+  display: block;
+  background: $color-yellow !important;
+  color: $color-black !important;
+  text-transform: uppercase;
+  border: 1px solid $color-yellow;
+  border-radius: 5px;
+  padding: 9px 30px !important;
+  font-size: 12px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold !important;
+}
+.page-tour .tour-button {
+  display: none !important;
+}
+
 
 //-----------------------------------------
 // IE Fixes

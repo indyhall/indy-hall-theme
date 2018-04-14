@@ -41,7 +41,7 @@
 				border-radius: 5px;
 				padding: 9px 30px !important;
 				font-size: 12px;
-				width: 150px;
+				width: auto;
 				text-align: center;
 
 			&:hover {
@@ -127,4 +127,3 @@
 		} // &:hover > a, &.focus > a
 	} // li
 } // &.dropdown
-

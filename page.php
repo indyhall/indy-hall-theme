@@ -17,11 +17,25 @@ get_header();
 $image = get_field('hero_image');
 $hero_offset = get_field('hero_offset');
 $hero_description = get_field('hero_description');
+
+if ($image){
 ?>
-<section class="hero" style="background-image:url('<?php echo $image['url']; ?>'); background-position: 0 <?php echo $hero_offset; ?>%">
+<section class="hero hero-image" style="background-image:url('<?php echo $image['url']; ?>'); background-position: 0 <?php echo $hero_offset; ?>%">
+<?php
+}
+else {
+?>
+<section class="hero">
+<?php
+}
+?>
   <h1 class="hero-title"><?php echo get_the_title(); ?></h1>
   <?php if($hero_description) { ?>
-	<span class="hero-description"><?php echo $hero_description ?></span>
+	<span class="hero-description">
+		<?php echo $hero_description ?>
+	</span>
+	<a href="/tour" class="tour-button">Schedule a Tour</a>
+
 	<?php } ?>
 </section>
 <section class="upcoming-event">
@@ -46,6 +60,8 @@ $hero_description = get_field('hero_description');
 				</div>
 			</div>
 	  </section>
+
+	  <?php get_sidebar(); ?>
 
 	</main><!-- #main -->
 </div><!-- .primary -->

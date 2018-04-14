@@ -87,7 +87,7 @@ add_action( 'save_post', 'indy_category_transient_flusher' );
  * @return string
  */
 function indy_content_more_link() {
-	return ' <a class="more-link" href="' . get_permalink() . '">' . esc_html__( 'Read More', 'indy' ) . '...</a>';
+	return ' <a class="more-link" href="' . get_permalink() . '">' . esc_html__( 'Continue reading this article', 'indy' ) . '...</a>';
 }
 add_filter( 'the_content_more_link', 'indy_content_more_link' );
 

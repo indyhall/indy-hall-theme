@@ -21,9 +21,10 @@ $hero_offset = get_field('hero_offset');
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-    <section class="hero" style="background-image:url('<?php echo $image['url']; ?>'); background-position: 0 <?php echo $hero_offset; ?>%">
+    <section class="hero hero-image" style="background-image:url('<?php echo $image['url']; ?>'); background-position: 0 <?php echo $hero_offset; ?>%">
       <h1 class="hero-title"><?php the_field('hero_title'); ?></h1>
 			<span class="hero-description"><?php the_field('hero_description'); ?></span>
+			<a href="/tour" class="tour-button">Schedule a Tour</a>
   	</section>
 
 	  <section class="upcoming-event">
@@ -97,5 +98,4 @@ $hero_offset = get_field('hero_offset');
 </div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
