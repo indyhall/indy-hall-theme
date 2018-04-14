@@ -14,7 +14,7 @@
 //-----------------------------------------
 .mobile-menu {
 	@include list-reset;
-
+	padding-top: 50px;
 	ul {
 		@include list-reset;
 	} // ul
@@ -28,6 +28,7 @@
 	a {
 		color: $color-white;
 		font-size: rem(14);
+		text-decoration: none;
 
 		&:focus {
 			outline: rem(2) solid $color-white;
@@ -36,6 +37,7 @@
 
 	// Submenu dropdowns.
 	.sub-menu {
+
 		display: none;
 
 		// If submenu is open.
@@ -55,6 +57,7 @@
 	@include size(rem(35));
 
 	background-color: transparent;
+	border: none;
 	display: inline-block;
 	padding: rem(5);
 	z-index: 9999;
@@ -135,7 +138,7 @@
 //-----------------------------------------
 .hamburger {
 	background-color: transparent;
-	outline: none;
+	outline: none !important;
 
 	&,
 	&::before,
@@ -225,7 +228,7 @@
 		&:focus,
 		&:hover {
 			background-color: transparent;
-			outline: 2px solid $color-white;
+			outline: 0px solid $color-white;
 		} // &:focus, &:hover
 	} // .off-canvas-button
 
@@ -242,7 +245,7 @@
 		&:focus,
 		&:hover {
 			background: transparent;
-			outline: 2px solid $color-white;
+			outline: 0px solid $color-white;
 		} // &:focus, &:hover
 
 		.admin-bar & {
@@ -254,9 +257,11 @@
 		} // .admin-bar &
 
 		.is-visible & {
-			display: inline-block;
-		} // .is-visible &
-	} // .off-canvas-close
+			display: none;
+		}
+		// .is-visible &
+	}
+	// .off-canvas-close
 
 	// The background screen.
 	&-screen {

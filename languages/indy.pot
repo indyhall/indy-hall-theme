@@ -76,7 +76,7 @@ msgstr ""
 msgid "Open Menu"
 msgstr ""
 
-#: page-home.php:1
+#: page-home.php:2
 msgid "Home"
 msgstr ""
 
@@ -97,15 +97,15 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: template-acf.php:2
+#: template-acf.php:3
 msgid "Page with Content Blocks"
 msgstr ""
 
-#: template-scaffolding.php:2
+#: template-scaffolding.php:3
 msgid "Scaffolding"
 msgstr ""
 
-#: template-sidebar-right.php:2
+#: template-sidebar-right.php:3
 msgid "Sidebar Right"
 msgstr ""
 
