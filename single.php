@@ -13,6 +13,7 @@ get_header();
 $image = get_field('hero_image');
 $hero_offset = get_field('hero_offset');
 $hero_description = get_field('hero_description');
+
 ?>
 <section class="hero" style="background-image:url('<?php echo $image['url']; ?>'); background-position: 0 <?php echo $hero_offset; ?>%">
   <h1 class="hero-title"><?php echo get_the_title(); ?></h1>
