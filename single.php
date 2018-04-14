@@ -45,6 +45,18 @@ else {
 		endwhile; // End of the loop.
 		?>
 
+		<p style="text-align:center;margin-bottom:150px;"><a href="/news/all-articles/">View All Articles</a></p>
+
+		<section class="instagram-widget">
+	  	<div class="inner-wrap">
+	  		<h2>What's Happening in our Community</h2>
+	  		<hr>
+				<div class="instagram-feed">
+					<?php echo do_shortcode("[instagram-feed]"); ?>
+				</div>
+			</div>
+	  </section>
+
 		</main><!-- #main -->
 	</div><!-- .primary -->
 
