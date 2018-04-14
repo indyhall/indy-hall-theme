@@ -8,6 +8,7 @@
 
 // Entry Title
 .entry-title {
+	display: none;
 	font-size: rem(36);
 } // .entry-title
 
@@ -74,7 +75,7 @@
 // Asides
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-	display: none;
+
 } // .blog .format-aside .entry-title, .archive .format-aside .entry-title
 
 // Content blocks.
