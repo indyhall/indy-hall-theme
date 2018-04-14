@@ -205,3 +205,13 @@ require get_template_directory() . '/inc/customizer/customizer.php';
  * Scaffolding Library.
  */
 require get_template_directory() . '/inc/scaffolding.php';
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Global Custom Fields',
+		'menu_title'	=> 'Global Custom Fields',
+		'menu_slug' 	=> 'global-custom-fields',
+	));
+
+}
