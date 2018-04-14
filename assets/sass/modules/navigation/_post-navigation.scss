@@ -20,7 +20,7 @@
 
 	.nav-next {
 		@include size(50% auto);
-		display:inline-block;
+		display: block;
 		float: right;
 		:after {
 			content: " ➡️"
