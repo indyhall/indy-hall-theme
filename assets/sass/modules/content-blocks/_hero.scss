@@ -4,11 +4,10 @@
 .hero {
 	  display: flex;
     background: #000;
-    background-position:-100px;
+    background-position:0;
     background-size: cover;
 	  padding: 10px;
 	  @include span-columns(12);
-
       @media only screen and (min-width: 1024px) {
         padding: 100px;
 	  }

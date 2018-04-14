@@ -14,9 +14,14 @@
 			@include padding(rem(10));
 
 			background: $color-mineshaft;
+			min-width: rem(300);
+			padding-top: rem(10);
 
 			li {
 				@include margin(0);
+				a {
+				margin: rem(5);
+				}
 			} // li
 		} // &.sub-menu
 	} // ul

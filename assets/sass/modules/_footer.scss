@@ -2,6 +2,9 @@
 // Footer
 //--------------------------------------------------------------
 
+.entry-footer {
+	display:none;
+}
 .site-footer {
 	@include span-columns(12);
 	border-top: 2px solid #FFF;

@@ -1,4 +1,13 @@
 .page-template-default, .single, .blog {
+    h1 {
+        font-size: 50px !important;
+        line-height: 50px !important;
+        @media only screen and (min-width: 1024px) {
+            font-size: 90px !important;
+            line-height: 90px !important;
+
+        }
+    }
     .site-content {
         //width: 100%;
         //@include clearfix;
@@ -6,10 +15,7 @@
         @include justify-content(center);
         @include display(flex);
 
-        .content-area {     
-            
-            
-            
+        .content-area {
             //padding-top: rem(64);
 
         @include media($tablet-portrait) {
@@ -40,11 +46,11 @@
                     width: 80%;
                     margin: 1em auto;
                   }
-    
+
                   img.aligncenter {
                     @media only screen and (min-width: 1024px) {
-                        max-width: 60%;
-                        margin: 1em 20%;
+                        max-width: 80%;
+                        margin: 1em 10%;
                     }
                     display: block;
                     float: none;
@@ -65,11 +71,11 @@
                     width: 80%;
                     margin: 1em auto 2em auto;
                   }
-    
+
                   img.size-full {
                     margin: 1em 10%;
                     max-width:100%;
-                  
+
                   }
             }
         }

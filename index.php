@@ -17,19 +17,19 @@ get_header();
 
 $image = get_field('hero_image');
 $hero_offset = get_field('hero_offset');
-
+$hero_description = get_field('hero_description');
 ?>
-
-	<div class="primary content-area">
-		<main id="main" class="site-main">
-			<section class="hero" style="background-image:url('<?php echo $image['url']; ?>'); background-position: 0 <?php echo $hero_offset; ?>%">
-	      <h1 class="hero-title"><?php the_field('hero_title'); ?></h1>
-				<span class="hero-description"><?php the_field('hero_description'); ?></span>
-	  	</section>
-
-		  <section class="upcoming-event">
-				<span class="upcoming-event-content"><?php the_field('upcoming_events', 'option'); ?></span>
-		  </section>
+<section class="hero" style="background-image:url('<?php echo $image['url']; ?>'); background-position: 0 <?php echo $hero_offset; ?>%">
+  <h1 class="hero-title"><?php echo get_the_title(); ?></h1>
+  <?php if($hero_description) { ?>
+	<span class="hero-description"><?php echo $hero_description ?></span>
+	<?php } ?>
+</section>
+<section class="upcoming-event">
+	<span class="upcoming-event-content"><?php the_field('upcoming_events', 'option'); ?></span>
+</section>
+<div class="primary content-area">
+	<main id="main" class="site-main">
 
 		<?php
 		if ( have_posts() ) :

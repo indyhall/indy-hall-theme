@@ -38,7 +38,7 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: rem(24) 0 0;
+	margin: rem(75) 0 0;
 } // .page-content, .entry-content, .entry-summary
 
 // Page links
@@ -81,3 +81,7 @@
 .content-block {
 	@include clearfix;
 } // .content-block
+
+#ez-toc-container {
+	margin: rem(20) 0 rem(50) 0;
+}
