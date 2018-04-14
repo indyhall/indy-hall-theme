@@ -42,7 +42,7 @@ $hero_offset = get_field('hero_offset');
 		  <p><?php the_field('text_block_2'); ?></p>
 	  </section>
 
-	  <section class="instagram">
+	  <section class="instagram-widget">
 	  	<div class="inner-wrap">
 	  		<h2>What's Happening in our Community</h2>
 	  		<hr>
@@ -92,20 +92,6 @@ $hero_offset = get_field('hero_offset');
 
 		  </div>
 	  </section>
-
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->

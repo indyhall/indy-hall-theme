@@ -3,27 +3,30 @@
 //--------------------------------------------------------------
 .hero {
 	  display: flex;
-      background: #000;
-      background-position:-100px;
-      background-size: cover;
+    background: #000;
+    background-position:-100px;
+    background-size: cover;
 	  padding: 10px;
 	  @include span-columns(12);
-  
+
       @media only screen and (min-width: 1024px) {
         padding: 100px;
 	  }
-	  
+
       flex-direction: column;
       margin: 0;
-  
+
       .hero-title {
         font-family: "Bungee Inline", open-sans;
         font-weight: 100;
         font-size: 58px;
+        line-height:58px;
 
         @media only screen and (min-width: 1024px) {
-          font-size: 100px;
-          line-height: 90px;
+          max-width: 1024px;
+          margin: 0 auto;
+          font-size: 130px;
+          line-height: 130px;
         }
 
         text-decoration: none;
@@ -34,7 +37,7 @@
         font-style: normal;
         margin: 50px 0 20px;
       }
-  
+
       .hero-description {
         display:none;
         color: $color-white;
@@ -43,10 +46,13 @@
         align-self: center;
         font-size: 36px;
         background: rgba(0, 0, 0, 0.5);
+        padding: 1rem 1rem;
 
         @media only screen and (min-width: 1024px) {
-          display: inline;
+          display: flex;
+          margin: 0 auto;
           max-width: 50%;
+
         }
         font-weight: 300;
         margin: 0;
@@ -54,9 +60,9 @@
       .ck_form.ck_naked {
         margin: 0 !important;
       }
-  
+
     .hentry {display: none;}
-  
+
 	// Transparent overlay.
 	// &::after {
 	// 	@include position(absolute, 0 0 null null);
@@ -82,7 +88,7 @@
 
 	// Add padding to description.
 	&-description {
-		padding-bottom: $gutter * 2;
+		// padding-bottom: $gutter * 2;
 	} // .hero-description
 } // .hero
 
