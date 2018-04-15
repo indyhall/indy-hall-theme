@@ -25,6 +25,9 @@ $hero_offset = get_field('hero_offset');
       <h1 class="hero-title"><?php the_field('hero_title'); ?></h1>
 			<span class="hero-description"><?php the_field('hero_description'); ?></span>
 			<a href="/tour" class="tour-button">Schedule a Tour</a>
+			<div class="member-login">
+				<a href="https://members.indyhall.org/">Member Login</a>
+			</div>
   	</section>
 
 	  <section class="upcoming-event">

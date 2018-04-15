@@ -5,7 +5,7 @@
     <div class="pricing-toggle">
       <span>I'm looking for a place to work</span>
       <label class="switch-toggle outer">
-        <input type="checkbox" />
+        <input type="checkbox" checked="true" />
         <div></div>
       </label>
       <span>I don't need a place to work</span>
