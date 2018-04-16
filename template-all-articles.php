@@ -21,9 +21,11 @@ get_header();
   	<?php echo do_shortcode("[convertkit form=5178127]"); ?>
   </span>
 </section>
+<?php if($show_announce_bar){ ?>
 <section class="upcoming-event">
 	<span class="upcoming-event-content"><?php the_field('upcoming_events', 'option'); ?></span>
 </section>
+<?php } ?>
 <div class="primary content-area">
 	<main id="main" class="site-main">
 		<article>
