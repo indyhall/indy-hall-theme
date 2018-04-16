@@ -17,7 +17,7 @@
 	<div class="entry-content">
 		<?php
 
-			if(the_content() == '') {
+			if(empty(get_the_content())) {
 				echo '<img class="aligncenter" style="width:25%;margin:0 auto;" src="https://www.codeschool.com/assets/custom/geocities/underconstruction-72327f17c652569bab9a33536622841bf905d145ee673a3e9d065fae9cabfe4f.gif" alt="Under Construction" />';
 			}
 			else {
