@@ -115,6 +115,11 @@
   background-size: 4px 4px;
 }
 
+.post-bottom {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
 // Content blocks.
 .content-block {
 	@include clearfix;

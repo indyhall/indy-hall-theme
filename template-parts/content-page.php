@@ -24,7 +24,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
+	<div class="post-item-divider post-bottom"></div>
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
