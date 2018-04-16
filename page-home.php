@@ -55,6 +55,7 @@ $hero_offset = get_field('hero_offset');
 				</div>
 			</div>
 	  </section>
+	  <?php get_template_part( 'template-parts/content-newsletter' ); ?>
 	  <?php get_template_part( 'template-parts/content-pricing' ); ?>
 
 	</main><!-- #main -->
