@@ -43,10 +43,10 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php the_post_navigation(); ?>
-	<p style="text-align:center;"><a href="/news/all/">View All Articles</a></p>
+	<p class="view-all-articles"><a href="/news/all/">View All Articles</a></p>
 	<div class="post-item-divider post-bottom"></div>
+	<?php // the_post_navigation(); ?>
 	<footer class="entry-footer">
-		<?php indy_entry_footer(); ?>
+		<?php //indy_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

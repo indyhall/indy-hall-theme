@@ -54,11 +54,6 @@ $hero_description = get_field('hero_description');
 					*/
 				get_template_part( 'template-parts/content', get_post_format() );
 
-
-				if (($wp_query->current_post + 1) < ($wp_query->post_count)) {
-				   echo '<div class="post-item-divider"></div>';
-				}
-
 			endwhile;
 
 			the_posts_navigation();

@@ -103,7 +103,12 @@
 	.more-link::before {
 		content: '📖 ';
 	}
-
+}
+.view-all-articles {
+	text-align:center;
+}
+.blog .view-all-articles{
+	display: none;
 }
 .post-item-divider {
 
