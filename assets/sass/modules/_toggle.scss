@@ -19,7 +19,8 @@
 }
 
 .switch-toggle input {
-  display: block;
+  /*display: block;*/
+  display: none;
   position:absolute;
   top: -50px;
   left: -50px;
