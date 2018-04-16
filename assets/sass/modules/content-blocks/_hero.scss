@@ -29,7 +29,7 @@
     padding: 20px;
     font-style: normal;
     margin: 30px 0 20px;
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 800px) {
       max-width: 1024px;
       font-size: 130px;
       line-height: 130px;
@@ -47,7 +47,7 @@
     padding: 1rem 1rem;
     font-weight: 300;
     margin: 0;
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 800px) {
       display: block;
       margin: 0 auto;
       max-width: 40%;
@@ -57,7 +57,7 @@
   .tour-button {
     margin: -20px auto 20px auto;
     display: block;
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 800px) {
       display: none;
     }
   }
