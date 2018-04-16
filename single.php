@@ -40,12 +40,9 @@ else {
 
 			get_template_part( 'template-parts/content', get_post_format() );
 
-			the_post_navigation();
 
 		endwhile; // End of the loop.
 		?>
-
-		<p style="text-align:center;margin-bottom:150px;"><a href="/news/all/">View All Articles</a></p>
 
 		<section class="instagram-widget">
 	  	<div class="inner-wrap">

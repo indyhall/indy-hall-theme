@@ -43,6 +43,9 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+	<?php the_post_navigation(); ?>
+	<p style="text-align:center;"><a href="/news/all/">View All Articles</a></p>
+	<div class="post-item-divider post-bottom"></div>
 	<footer class="entry-footer">
 		<?php indy_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

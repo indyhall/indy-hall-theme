@@ -109,9 +109,9 @@
 	width: rem(500);
 	margin: 0 auto;
 	height: rem(20);
-	display:block;
+	display: block;
 	box-shadow: 4px 4px 0 rgba(0,0,0,.1);
-	background: #b20985 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAACFJREFUGBljZMABvi25+x+HFAMDSBKngkEnCfIGTtdC5QBmcDPsXQdqOgAAAABJRU5ErkJggg==) repeat;
+	background: $color-yellow url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAACFJREFUGBljZMABvi25+x+HFAMDSBKngkEnCfIGTtdC5QBmcDPsXQdqOgAAAABJRU5ErkJggg==) repeat;
   background-size: 4px 4px;
 }
 
