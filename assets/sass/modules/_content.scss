@@ -106,18 +106,24 @@
 
 }
 .post-item-divider {
-	width: rem(500);
-	margin: 0 auto;
+
+	width: 60%;
+	margin: 0 -12px 0 auto;
+	position: relative;
 	height: rem(20);
 	display: block;
 	box-shadow: 4px 4px 0 rgba(0,0,0,.1);
 	background: $color-yellow url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAACFJREFUGBljZMABvi25+x+HFAMDSBKngkEnCfIGTtdC5QBmcDPsXQdqOgAAAABJRU5ErkJggg==) repeat;
   background-size: 4px 4px;
+	@media only screen and (min-width: 1024px) {
+		width: rem(500);
+		margin: 0 auto;
+	}
 }
 
 .post-bottom {
-	margin-top: 50px;
-	margin-bottom: 100px;
+	margin-top: 50px !important;
+	margin-bottom: 100px !important;
 }
 
 // Content blocks.
