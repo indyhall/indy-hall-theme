@@ -6,7 +6,7 @@
 	font-family: $font-sans;
 	font-weight: 100;
 
-	@include media($tablet-landscape, null) {
+	@media only screen and (min-width: 1270px) {
 		padding: $gutter;
 	}
 
@@ -16,7 +16,7 @@
 		width: 35px;
 	}
 
-	@include media($tablet-landscape, null) {
+	@media only screen and (min-width: 1270px) {
 		img.custom-logo {
 			position: absolute;
 			transform: rotate(-10deg);

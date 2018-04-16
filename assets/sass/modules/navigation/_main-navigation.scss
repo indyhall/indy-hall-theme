@@ -4,9 +4,14 @@
 .main-navigation {
 	display: none;
 
-	@include media($tablet-landscape) {
+  @media only screen and (min-width: 1270px) {
+  	font-size:12px;
+  }
+
+  @media only screen and (min-width: 1270px) {
+  	font-size: 14px;
 		display: block;
-	}
+  }
 
 	ul.menu {
 		display: flex;
@@ -43,6 +48,11 @@
 				font-size: 12px;
 				width: rem(220);
 				text-align: center;
+				@media only screen and (min-width: 1270px) {
+			  	font-size:12px;
+			  	width: rem(170);
+			  	padding: 9px 10px !important;
+			  }
 
 			&:hover {
 				background: $color-yellow;
