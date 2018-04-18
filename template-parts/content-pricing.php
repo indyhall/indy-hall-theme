@@ -2,14 +2,14 @@
   <div class="inner-wrap">
     <h2><?php the_field('pricing_header', 'option'); ?></h2>
     <hr>
-    <div class="pricing-toggle">
+    <!-- <div class="pricing-toggle">
       <span>I'm looking for a place to work</span>
       <label class="switch-toggle outer">
         <input type="checkbox" checked="true" />
         <div></div>
       </label>
       <span>I don't need a place to work</span>
-    </div>
+    </div> -->
     <div class="packages">
       <?php
         // check if the repeater field has rows of data
