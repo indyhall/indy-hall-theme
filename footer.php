@@ -57,6 +57,7 @@
 	?>
 </nav>
 <div class="off-canvas-screen"></div>
+<script>(function(d,a){function c(){var b=d.createElement("script");b.async=!0;b.type="text/javascript";b.src=a._settings.messengerUrl;b.crossOrigin="anonymous";var c=d.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}window.kayako=a;a.readyQueue=[];a.newEmbedCode=!0;a.ready=function(b){a.readyQueue.push(b)};a._settings={apiUrl:"https://indyhall.kayako.com/api/v1",teamName:"Indy Hall",homeTitles:[{"locale":"en-us","translation":"Hello! 👋"}],homeSubtitles:[{"locale":"en-us","translation":"Welcome to Indy Hall. Have any questions? "}],messengerUrl:"https://indyhall.kayakocdn.com/messenger",realtimeUrl:"wss://kre.kayako.net/socket",widgets:{presence:{enabled:true},twitter:{enabled:false,twitterHandle:"null"},articles:{enabled:false,sectionId:null}},styles:{primaryColor:"#F1703F",homeBackground:"-192deg, #40364D 37%, #9B4779 100%",homePattern:"https://assets.kayako.com/messenger/pattern-1--dark.svg",homeTextColor:"#FFFFFF"}};window.attachEvent?window.attachEvent("onload",c):window.addEventListener("load",c,!1)})(document,window.kayako||{});</script>
 </body>
 </html>
 
