@@ -1,6 +1,4 @@
   .pricing-packages {
-    text-align: center;
-    background: #F4F4F4;
     overflow: auto;
     display: flex;
     justify-content: center;
@@ -25,17 +23,62 @@
       width: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
 
 
       @media only screen and (min-width: 1024px) {max-width: 980px;}
+
+      .non-list.packages {
+        .button {
+          border-radius: 5px;
+          padding: 10px 30px;
+          color: #000;
+          border: 1px solid #000;
+          display: inline-block;
+          background: $color-white;
+          text-align: center;
+
+          &:hover {
+            font-weight: 200;
+          }
+        }
+      }
+
+      .nights.packages{
+        border: 1px solid #F1AEFF !important;
+        .button {
+          border-radius: 5px;
+          padding: 10px 30px;
+          color: #9013FE;
+          border: 1px solid #9013FE;
+          display: inline-block;
+          background: $color-white;
+          text-align: center;
+
+          &:hover {
+            font-weight: 200;
+          }
+        }
+
+      }
 
       .packages {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border: 1px solid #D5D5D5;
+        border-radius: 5px;
+        margin-bottom: 10px;
 
         @media only screen and (min-width: 1024px) {
-          flex-direction: row;
+          //flex-direction: row;
+        }
+
+        hr {
+          background: #ebebeb !important;
+          height: 1px;
+          margin-bottom: 0;
+          width: 95%;
         }
 
         .package {
@@ -46,34 +89,39 @@
           justify-content: center;
           flex-direction: column;
           padding: 20px;
-          justify-content: space-between;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: left;
 
           @media only screen and (min-width: 1024px) {
             margin: 0 10px;
+            flex-direction: row;
           }
 
-          .package-name, .package-price, .package-caption, .package-description, .button {display: block;}
+          .package-price, .package-caption, .package-description {
+            //width: 200px;
+            margin-right: 2rem;
+          }
+
+          .package-name {
+            width: 200px;
+          }
 
           .package-price {
-            font-size: 36px;
-            font-weight: 500;
-          }
-
-          .button {
-            border-radius: 5px;
-            padding: 10px;
-            margin-top: 10px;
-            color: #271a1a;
-            border: none;
+            font-size: 24px;
+            font-weight: bold;
           }
 
           .package-name {
             text-transform: uppercase;
             color: #333;
-            font-size: 10px;
+            font-size: 12px;
             letter-spacing: 4px;
-            font-weight: 500;
-            margin-bottom: 10px;
+            font-weight: bold;
+            display: inline-block;
+            @media only screen and (min-width: 1024px) {
+              text-align: left;
+            }
           }
 
           .package-caption {
@@ -89,7 +137,30 @@
             color: white;
             text-decoration: none;
             font-weight: 100;
+            box-shadow: none;
           }
+        }
+
+        .button {
+          border-radius: 5px;
+          padding: 10px 30px;
+          color: #271a1a;
+          border: none;
+          display: inline-block;
+          background: $color-yellow;
+          text-align: center;
+        }
+        a {
+          box-shadow: none !important;
+          text-align: center;
+          margin-left: auto;
+        }
+
+        a.center {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 20px;
+          margin-bottom: 20px;
         }
       }
     }
