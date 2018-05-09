@@ -67,6 +67,4 @@ else {
 
 	</main><!-- #main -->
 </div><!-- .primary -->
-
-<?php get_template_part( 'template-parts/content-pricing' ); ?>
 <?php get_footer(); ?>
