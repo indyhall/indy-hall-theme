@@ -2,7 +2,6 @@
   <div class="inner-wrap">
     <h2><?php the_field('pricing_header', 'option'); ?></h2>
     <hr>
-
     <div class="packages online-membership non-list">
       <?php
         // check if the repeater field has rows of data
@@ -90,6 +89,8 @@
               <span class="package-caption"><?php the_sub_field('price_caption'); ?></span>
               <a href="<?php the_sub_field('button_link'); ?>"><span class="button" style="border-color: #<?php the_sub_field('color'); ?>; color: #<?php the_sub_field('color'); ?>; font-weight:bold;"><?php the_sub_field('button_text'); ?></span></a>
             </div>
+
+            <hr>
             <?php
           endwhile;
         else :
