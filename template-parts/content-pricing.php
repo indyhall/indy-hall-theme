@@ -65,7 +65,7 @@
               <span class="package-name"><?php the_sub_field('package_name'); ?></span>
               <span class="package-price" style="color: #<?php the_sub_field('color'); ?>"><?php the_sub_field('package_price'); ?></span>
               <span class="package-caption"><?php the_sub_field('price_caption'); ?></span>
-              <a href="<?php the_sub_field('button_link'); ?>"><span class="button" style="border-color: #<?php the_sub_field('color'); ?>; color: #<?php the_sub_field('color'); ?>; font-weight:bold;"><?php the_sub_field('button_text'); ?></span></a>
+              <a class="right" href="<?php the_sub_field('button_link'); ?>"><span class="button" style="border-color: #<?php the_sub_field('color'); ?>; color: #<?php the_sub_field('color'); ?>; font-weight:bold;"><?php the_sub_field('button_text'); ?></span></a>
             </div>
             <?php
           endwhile;
@@ -87,7 +87,7 @@
               <span class="package-name"><?php the_sub_field('package_name'); ?></span>
               <span class="package-price" style="color: #<?php the_sub_field('color'); ?>"><?php the_sub_field('package_price'); ?></span>
               <span class="package-caption"><?php the_sub_field('price_caption'); ?></span>
-              <a href="<?php the_sub_field('button_link'); ?>"><span class="button" style="border-color: #<?php the_sub_field('color'); ?>; color: #<?php the_sub_field('color'); ?>; font-weight:bold;"><?php the_sub_field('button_text'); ?></span></a>
+              <a class="right" href="<?php the_sub_field('button_link'); ?>"><span class="button" style="border-color: #<?php the_sub_field('color'); ?>; color: #<?php the_sub_field('color'); ?>; font-weight:bold;"><?php the_sub_field('button_text'); ?></span></a>
             </div>
 
             <hr>
