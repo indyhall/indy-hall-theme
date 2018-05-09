@@ -7,7 +7,6 @@
 }
 .site-footer {
 	@include span-columns(12);
-	border-top: 2px solid #FFF;
 	background: #4A4A4A url('assets/images/footer-bg.png');
 	text-align: center;
 	color: white;
