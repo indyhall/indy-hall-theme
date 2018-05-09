@@ -65,8 +65,6 @@ $hero_description = get_field('hero_description');
 		endif;
 		?>
 		<?php get_template_part( 'template-parts/content-newsletter' ); ?>
-
 		</main><!-- #main -->
 	</div><!-- .primary -->
-<?php get_template_part( 'template-parts/content-pricing' ); ?>
 <?php get_footer(); ?>
