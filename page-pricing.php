@@ -43,6 +43,7 @@ else {
 	<span class="upcoming-event-content"><?php the_field('upcoming_events', 'option'); ?></span>
 </section>
 <?php } ?>
+<?php get_template_part( 'template-parts/content-pricing', 'page' ); ?>
 <div class="primary content-area">
 	<main id="main" class="site-main">
 		<article>
@@ -61,5 +62,5 @@ else {
 		</article>
 	</main><!-- #main -->
 </div><!-- .primary -->
-<?php get_template_part( 'template-parts/content-pricing', 'page' ); ?>
+
 <?php get_footer(); ?>
