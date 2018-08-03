@@ -30,6 +30,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline|Fredericka+the+Great|Press+Start+2P" rel="stylesheet">
+	<meta name="google-site-verification" content="6m_5qat17m1TlRCBEdqDnUdd-aj2pE6P5XlgPYmYOxc" />
 
 	<?php wp_head(); ?>
 
