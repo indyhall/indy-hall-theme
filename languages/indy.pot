@@ -13,14 +13,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: 404.php:17
-msgid "Sorry, this page doesn't exist."
-msgstr ""
-
-#: 404.php:22
-msgid "It seems we can’t find what you’re looking for. Perhaps searching can help."
-msgstr ""
-
 #: comments.php:24
 msgid "Comment section"
 msgstr ""
@@ -68,16 +60,20 @@ msgstr ""
 msgid "Widget area for %s"
 msgstr ""
 
-#: header.php:28
+#: header.php:41
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:52
+#: header.php:65
 msgid "Open Menu"
 msgstr ""
 
 #: page-home.php:2
 msgid "Home"
+msgstr ""
+
+#: page-pricing.php:3
+msgid "Pricing Page"
 msgstr ""
 
 #: search.php:18
@@ -99,6 +95,10 @@ msgstr ""
 
 #: template-acf.php:3
 msgid "Page with Content Blocks"
+msgstr ""
+
+#: template-all-articles.php:3
+msgid "Display All Articles"
 msgstr ""
 
 #: template-scaffolding.php:3
@@ -137,8 +137,8 @@ msgstr ""
 msgid "WebDevStudios Placeholder Image"
 msgstr ""
 
-#: inc/hooks.php:90, inc/template-tags.php:429
-msgid "Read More"
+#: inc/hooks.php:90
+msgid "Continue reading this article"
 msgstr ""
 
 #: inc/hooks.php:101
@@ -191,51 +191,55 @@ msgid "by %s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:53, inc/template-tags.php:60
+#: inc/template-tags.php:55, inc/template-tags.php:62
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:56
+#: inc/template-tags.php:58
 msgid "Posted in %1$s"
 msgstr ""
 
-#: inc/template-tags.php:63
+#: inc/template-tags.php:65
 msgid "Tagged %1$s"
 msgstr ""
 
-#: inc/template-tags.php:69
+#: inc/template-tags.php:71
 msgid "Leave a comment"
 msgstr ""
 
-#: inc/template-tags.php:69
+#: inc/template-tags.php:71
 msgid "1 Comment"
 msgstr ""
 
-#: inc/template-tags.php:69
+#: inc/template-tags.php:71
 msgid "% Comments"
 msgstr ""
 
-#: inc/template-tags.php:76, template-parts/content-page.php:34
+#: inc/template-tags.php:78, template-parts/content-page.php:41
 msgid "Edit %s"
 msgstr ""
 
-#: inc/template-tags.php:95
+#: inc/template-tags.php:97
 msgid "Please define default parameters in the form of an array."
 msgstr ""
 
-#: inc/template-tags.php:100
+#: inc/template-tags.php:102
 msgid "Please define an SVG icon filename."
 msgstr ""
 
-#: inc/template-tags.php:380
+#: inc/template-tags.php:382
 msgid "Link to %s"
 msgstr ""
 
-#: inc/template-tags.php:462
+#: inc/template-tags.php:431
+msgid "Read More"
+msgstr ""
+
+#: inc/template-tags.php:464
 msgid "More Information"
 msgstr ""
 
-#: inc/template-tags.php:464, inc/template-tags.php:465
+#: inc/template-tags.php:466, inc/template-tags.php:467
 msgid "Search"
 msgstr ""
 
@@ -255,7 +259,7 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:22, template-parts/content.php:41
+#: template-parts/content-page.php:29, template-parts/content.php:41
 msgid "Pages:"
 msgstr ""
 
