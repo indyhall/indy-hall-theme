@@ -68,6 +68,12 @@
 	       }
 	       return(false);
 	}
+
+	var quantity = getQueryVariable('qty');
+
+	if(document.getElementById('simpay-639-number-5')){
+		document.getElementById('simpay-639-number-5').value = quantity;
+	}
 </script>
 </body>
 </html>
