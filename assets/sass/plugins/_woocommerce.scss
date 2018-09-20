@@ -6,6 +6,6 @@
   display: none;
 }
 
-.product_meta span {
+.product_meta span.sku_wrapper, .product_meta span.posted_in {
   display: block;
 }
