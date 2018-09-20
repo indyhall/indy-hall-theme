@@ -21,3 +21,8 @@
 .product .view-all-articles {
   display: none;
 }
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: 150px !important;
+  margin-right: 15px;
+}
