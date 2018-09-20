@@ -6,6 +6,9 @@
 .product_meta span.sku_wrapper, .product_meta span.posted_in {
   display: block;
 }
+.product_meta span.posted_in {
+  display: none;
+}
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
   display: none;
