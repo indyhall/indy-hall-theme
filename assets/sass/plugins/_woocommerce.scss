@@ -29,3 +29,7 @@
 .woocommerce-cart table.cart td {
   border: none !important;
 }
+
+.woocommerce-cart table.cart table td:last-child {
+  border-bottom: none;
+}
