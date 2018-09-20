@@ -215,3 +215,20 @@ if( function_exists('acf_add_options_page') ) {
 	));
 
 }
+
+add_filter( 'the_title', 'woo_title_order_received', 10, 2 );
+function woo_title_order_received( $title, $id ) {
+	if ( function_exists( 'is_order_received_page' ) &&
+	     is_order_received_page() && get_the_ID() === $id ) {
+		$title = "Hey, thanks for your order! 🚀";
+	}
+	return $title;
+}
+
+/**
+ * Custom text on the receipt page.
+ */
+function isa_order_received_text( $text, $order ) {
+    return 'Your final order details are below, and a receipt has been sent to you via email. <br/><hr/>';
+}
+add_filter('woocommerce_thankyou_order_received_text', 'isa_order_received_text', 10, 2 );
