@@ -1,11 +1,16 @@
+
+.product .entry-summary {
+  margin-top: 0;
+}
+
+.product_meta span.sku_wrapper, .product_meta span.posted_in {
+  display: block;
+}
+
 .woocommerce div.product .woocommerce-tabs ul.tabs {
   display: none;
 }
 
 .product .view-all-articles {
   display: none;
-}
-
-.product_meta span.sku_wrapper, .product_meta span.posted_in {
-  display: block;
 }
